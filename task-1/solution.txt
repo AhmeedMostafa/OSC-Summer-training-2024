@@ -1,0 +1,13 @@
+mkdir ahmed
+touch ~/ahmed/one.txt ~/ahmed/two.txt ~/ahmed/three.txt ~/ahmed/four.txt
+mkdir ~/ahmed/BAD
+touch ~/ahmed/BAD/bad.txt
+mv ~/ahmed/one.txt ~/Downloads/
+cd ~/Downloads/
+cp one.txt copy.txt
+cd ~/ahmed
+nano two.txt
+echo "1-hello OSC 2-hello OSC 3-hello OSC 4-hello OSC 5-hello OSC 6-hello OSC 7-hello OSC 8-hello OSC" > three.txt
+mv three.txt hello.txt
+rm four.txt
+rm -r ~/ahmed/BAD
