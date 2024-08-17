@@ -1,0 +1,18 @@
+git config --global user.name ahmeedmostafa
+git config --global user.email a7med.mostafa2323@gmail.com
+git clone https://github.com/AhmeedMostafa/OSC-Summer-training-2024.git
+cd /OSC-Summer-training-2024
+mkdir task-2
+cd task-2
+touch greeting.txt
+echo "hello world" > greeting.txt
+git add .
+git commit -m "Added greeting"
+git checkout -b intro
+echo "I love Git" >> greeting.txt
+git add .
+git commit -m "Added I love Git"
+git checkout main
+git merge intro
+git tag v1
+git push
